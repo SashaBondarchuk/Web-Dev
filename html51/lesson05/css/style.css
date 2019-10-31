@@ -1,0 +1,46 @@
+form#registration {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #1e90ff;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    counter-reset: fieldsets;
+    padding: 20px;
+    width: 400px;
+}
+form#registration fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form#registration legend {
+color: navy;
+font-size: 12px;
+font-weight: bold;
+padding-bottom: 10px;
+-ms-text-shadow: 0 1px 1px #c1f7ff;
+text-shadow: 0 1px 1px #c1f7ff;
+}
+
+form#registration label {
+    background: none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+}
+
+form#registration button {
+    background-color: #87CEEB;
+    border: none;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    color:white;
+    display:block;
+    font: 18px Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 25px;
+    -ms-text-shadow: 0 1px 1px #C1F7FF;
+    text-shadow: 0 1px 1px #C1F7FF;
+    text-transform: uppercase;
+}
+

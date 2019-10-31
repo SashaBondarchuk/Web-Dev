@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EPS-WEB-10</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        canvas {
+            border: 3px double black;
+        }
+    </style>
+</head>
+
+<body onload="createImage()">
+    <script type="text/javascript">
+
+        function createImage() {
+            drawCanvas1();
+            drawCanvas2();
+            drawCanvas3();
+        }
+        function drawCanvas1() {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "black";
+            ctx.strokeRect(50, 50, 180, 180);
+            ctx.fillStyle = "black";
+            ctx.fillRect(60, 60, 160, 160);
+            ctx.fillStyle = "white";
+            ctx.fillRect(70, 70, 140, 140);
+        }
+
+        function drawCanvas2() {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(250, 90, 300, 100);
+            ctx.fillStyle = "green";
+            ctx.fillRect(260, 100, 300, 100);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(270, 110, 300, 100);
+        }
+
+        function drawCanvas3() {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(600, 110, 35, 180);
+            ctx.fillStyle = "green";
+            ctx.fillRect(600, 50, 35, 60);
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(670, 140, 35, 150);
+            ctx.fillStyle = "green";
+            ctx.fillRect(670, 80, 35, 60);
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(740, 80, 35, 210);
+            ctx.fillStyle = "green";
+            ctx.fillRect(740, 30, 35, 60);
+
+        }
+
+    </script>
+
+
+    <body>
+        <canvas id="my_canvas" width="900" height="300"></canvas>
+    </body>
+</body>
+
+</html>

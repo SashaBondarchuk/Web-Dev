@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form id="registration">
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            <table>
+                <tr>
+                    <td><label for="name">ФИО</label></td>
+                    <td><input id="name" name="name" type="text" required="required"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input id="email" name="email" type="email" required="required"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Номер телефона </label></td>
+                    <td><input id="phone" name="phone" type="tel" required="required" pattern="\(\d{3,4}\) \d{2,3}-\d{2}-\d{2}"></td>
+                </tr>
+                <tr>
+                    <td><label for="dateofbirth">Дата рождения</label></td>
+
+                    <td><input id="dateofbirth" name="dateofbirth" type="date" required="required"/></td>
+                </tr>
+        </fieldset>
+        <fieldset>
+            <legend>Параметры доставки</legend>
+            <table>
+                <tr>
+                    <td><label for="address">Адрес</label></td>
+                    <td><textarea id="address" name="address" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="postcode"> Почтовый адрес</label></td>
+                    <td><textarea pattern="\d{5}" id="postcode" name="postcode" type="text"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fielset>
+            <legend>Предпочетаемый способ получения уведомлений</legend>
+            <table>
+                <tr>
+                    <td><input id="emailmessage" name="message" type="radio" required="required"></td>
+                    <td><label for="emailmessage">По Email</label></td>
+                </tr>
+                <tr>
+                    <td><input id="phonemessage" name="message" type="radio" required="required"></td>
+                    <td><label for="phonemessage">По Email</label></td>
+                </tr>
+                <tr>
+                    <td><input id="nomessage" name="message" type="radio" required="required"></td>
+                    <td><label for="nomessage">Не уведомлять</label></td>
+                </tr>
+            </table>
+        </fielset>
+        <fieldset>
+            <button type="submit">Отправить данные</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
