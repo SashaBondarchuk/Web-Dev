@@ -1,1 +1,10 @@
-# Empty CSS file for your own CSS
+h1#fa {
+    font-size: 96pt;
+    font-weight: bold;
+    color: green;
+    text-shadow: 7px 7px 16px #00ff00;
+}
+
+h3#fb {
+    padding: 20px;
+}

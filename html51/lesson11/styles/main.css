@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+    color: #5C373C;
+    margin: 10px;
+}
+
+footer {
+    font-size: x-small;
+    font-style: italic;
+    background-color: #C14860;
+    padding: 10px;
+}
+
+header {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    background: #051118;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #051118, #5C373C);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #051118, #5C373C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #051118, #5C373C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #051118, #5C373C);
+    /* Standard syntax */
+    color: #CAA893;
+    border: thin #CAA893 inset;
+    margin: 20px 30px;
+    padding: 10px 20px;
+}
