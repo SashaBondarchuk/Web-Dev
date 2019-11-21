@@ -1,10 +1,24 @@
 h1#fa {
-    font-size: 96pt;
+    font-size: 80pt;
     font-weight: bold;
-    color: green;
-    text-shadow: 7px 7px 16px #00ff00;
+    color: rgb(17, 78, 17);
+    text-shadow: 7px 7px 16px #20ac20;
 }
 
-h3#fb {
-    padding: 20px;
+h4#fb {
+    padding: 30px;
+}
+
+body {
+    background-color: rgb(173, 218, 210);
+}
+
+#d1 {
+    padding-left: 40px;
+    overflow: auto;
+    height: 500px;
+}
+
+#d4 {
+    padding-right: 40px;
 }
