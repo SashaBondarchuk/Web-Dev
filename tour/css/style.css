@@ -1,24 +1,40 @@
 h1#fa {
-    font-size: 80pt;
+    margin-top: -40px;
+    font-size: 65pt;
     font-weight: bold;
-    color: rgb(17, 78, 17);
-    text-shadow: 7px 7px 16px #20ac20;
+    /* color: rgb(56, 0, 16); */
+    /* text-shadow: 7px 7px 16px #240411;  */
+    text-align: center;
 }
 
 h4#fb {
-    padding: 30px;
+    font-size: 17pt;
+    padding: 10px;
+    text-align: justify;
+     color: rgb(29, 26, 26); 
 }
 
 body {
-    background-color: rgb(173, 218, 210);
+    background-color: rgb(238, 228, 228);
 }
 
 #d1 {
     padding-left: 40px;
     overflow: auto;
-    height: 500px;
+    height: 450px;
+    text-align: justify;
 }
 
 #d4 {
     padding-right: 40px;
+}
+
+#jbt {
+    /* background-image: url(http://travelworld.su/wp-content/uploads/2017/09/4-1.jpg); */
+    /* background-position: center center; */
+    background-color: rgb(224, 211, 211);
+}
+
+p {
+    text-align: justify;
 }
