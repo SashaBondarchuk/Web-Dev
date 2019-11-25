@@ -7,7 +7,7 @@ h1#fa {
     /* text-align: center; */
 }
 
-h4#fb {
+p#fb {
     font-size: 17pt;
     padding: 10px;
     text-align: justify;
@@ -25,10 +25,6 @@ body {
     text-align: justify;
 }
 
-#d4 {
-    padding-right: 40px;
-}
-
 #jbt {
     background-image: url(http://travelworld.su/wp-content/uploads/2017/09/4-1.jpg);
     background-position: center center;
@@ -38,11 +34,7 @@ p {
     text-align: justify;
 }
 
-table {
-    padding-left: 10px;
-}
-
 .box {
     overflow: scroll;
-    height: 250px;
+    height: 500px;
 }
