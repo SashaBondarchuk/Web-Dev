@@ -31,7 +31,8 @@ body {
     background-position: center center;
 }
 
-#jbtm { /* головний джамбатрон */
+#jbtm {
+    /* головний джамбатрон */
     background-image: url(http://wallpaperswide.com/download/travel_the_world-wallpaper-1920x1080.jpg);
     background-position: center -250px;
 }
@@ -115,6 +116,7 @@ p#firstp {
     font-weight: 400;
 }
 
+
 /* Italy !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #ithead {
@@ -123,7 +125,7 @@ p#firstp {
     font-weight: bold;
     color: #fa3411;
     text-shadow: 7px 7px 16px #421313;
-    margin-left: 15px ;
+    margin-left: 15px;
 }
 
 #itmain {
@@ -146,9 +148,7 @@ p#firstp {
 }
 
 .box2 {
-    overflow: auto;
     height: 500px;
-    /*margin-right ??? */
 }
 
 .box3 {
@@ -158,7 +158,7 @@ p#firstp {
 
 #it-brdtxt1 {
     border: 4px solid rgb(192, 45, 0);
-    height: 190px; 
+    height: 190px;
     width: 300px;
     padding: 5px;
     border-radius: 8px;
@@ -204,7 +204,9 @@ p#firstp {
     margin-left: 20px;
 }
 
+
 /* заглавне слово */
+
 #h1-it1 {
     font-size: 29pt;
     font-weight: bold;
@@ -223,6 +225,7 @@ p#firstp {
     color: red;
 }
 
+
 /* Дания  */
 
 #dm-jbt {
@@ -236,7 +239,7 @@ p#firstp {
     font-weight: bold;
     color: #f2eb34;
     text-shadow: 7px 7px 16px #923a07;
-    margin-left: 15px ;
+    margin-left: 15px;
 }
 
 #dmmain {
@@ -244,4 +247,13 @@ p#firstp {
     padding: 10px;
     text-align: justify;
     color: rgb(29, 26, 26);
+}
+
+.dm-box {
+    overflow: auto;
+    height: 530px;
+}
+
+img:hover {
+    border: 2px solid rgb(253, 102, 253);
 }
