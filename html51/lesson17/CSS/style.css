@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Itim;
+    src: url('../fonts/mod3_itim.ttf') format('truetype');
+}
+
+body {
+    font-family: Itim;
+}
