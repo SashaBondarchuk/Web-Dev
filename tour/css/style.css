@@ -1,3 +1,42 @@
+/* Головна сторінка */
+
+
+/* Головний джамбатрон */
+
+#main-jbt {
+    background-image: url(http://wallpaperswide.com/download/travel_the_world-wallpaper-1920x1080.jpg);
+    background-position: center -250px;
+}
+
+/* Заголовок сайту */
+
+h1#firsth {
+    text-align: center;
+}
+  
+/* список */
+
+#firstul {
+    font-weight: 700;
+    font-size: 15pt;
+    margin-left: 35%;
+}
+
+/* Заохочення */
+
+p#firstp {
+    text-align: center;
+    font-size: 19pt;
+    font-weight: 400;
+}
+
+
+
+
+/* Канада */
+
+/* Заголовок "Канада" */
+
 h1#fa {
     margin-top: -40px;
     font-size: 65pt;
@@ -7,6 +46,8 @@ h1#fa {
     margin-left: 15px;
 }
 
+/* Опис Канади кількома реченнями */
+
 p#fb {
     font-size: 17pt;
     padding: 10px;
@@ -14,42 +55,30 @@ p#fb {
     color: rgb(29, 26, 26);
 }
 
-body {
-    background-color: rgb(233, 223, 223);
-    margin-bottom: 17px;
-}
+/* Цетральний блок тексту  */
 
-#d1 {
+#ca-d {
     padding-left: 40px;
     overflow: auto;
     height: 500px;
     text-align: justify;
 }
 
-#jbt {
+/* Головна панель з картинкою на задньому фоні */
+
+#ca-jbt {
     background-image: url(http://travelworld.su/wp-content/uploads/2017/09/4-1.jpg);
     background-position: center center;
 }
 
-#jbtm {
-    /* головний джамбатрон */
-    background-image: url(http://wallpaperswide.com/download/travel_the_world-wallpaper-1920x1080.jpg);
-    background-position: center -250px;
-}
+/* Табличка */
 
-p {
-    text-align: justify;
-}
-
-.box {
+.ca-box {
     overflow: scroll;
     height: 500px;
 }
 
-img {
-    position: relative;
-    border-radius: 8px;
-}
+/* Текст, виділений в рамочці */
 
 #brdtxt1 {
     border: 4px solid rgb(230, 228, 116);
@@ -61,6 +90,8 @@ img {
     box-shadow: 4px 4px 4px 6px #a59c1f;
     background-color: rgb(233, 223, 132);
 }
+
+/* Текст, виділений в рамочці */
 
 #brdtxt2 {
     border: 4px solid rgb(201, 80, 80);
@@ -76,9 +107,7 @@ img {
     float: right;
 }
 
-td {
-    background-color: #e7c6c0;
-}
+/* Картинки (Канада) */
 
 #im1 {
     margin-left: 20px;
@@ -100,26 +129,15 @@ td {
     margin-left: 20px;
 }
 
-h1#firsth {
-    text-align: center;
-}
-
-#firstul {
-    font-weight: 700;
-    font-size: 15pt;
-    margin-left: 35%;
-}
-
-p#firstp {
-    text-align: center;
-    font-size: 19pt;
-    font-weight: 400;
-}
 
 
-/* Italy !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-#ithead {
+
+/* Italy */
+
+/* Заголовок "Італія" */
+
+#it-head {
     margin-top: -40px;
     font-size: 65pt;
     font-weight: bold;
@@ -128,32 +146,44 @@ p#firstp {
     margin-left: 15px;
 }
 
-#itmain {
+/* Опис Італії кількома реченнями */
+
+#it-main {
     font-size: 17pt;
     padding: 10px;
     text-align: justify;
     color: rgb(29, 26, 26);
 }
 
-#d2 {
+/* Цетральний блок тексту  */
+
+#it-d {
     padding-left: 40px;
     overflow: auto;
     height: 500px;
 }
+
+/* Головна панель з картинкою на задньому фоні */
 
 #it-jbt {
     background-image: url(https://img4.goodfon.ru/wallpaper/nbig/a/46/milan-italiia-kanal-doma-ogni-fonari-vecher-zakat.jpg);
     background-position: center center;
 }
 
-.box2 {
+/* Табличка */
+
+.it-box2 {
     height: 500px;
 }
 
-.box3 {
+/* Табличка */
+
+.it-box3 {
     overflow: auto;
     height: 500px;
 }
+
+/* Текст, виділений в рамочці */
 
 #it-brdtxt1 {
     border: 4px solid rgb(192, 45, 0);
@@ -167,6 +197,8 @@ p#firstp {
     float: left;
 }
 
+/* Текст, виділений в рамочці */
+
 #it-brdtxt2 {
     border: 4px solid rgb(201, 142, 64);
     width: 300px;
@@ -177,6 +209,8 @@ p#firstp {
     background-color: rgb(223, 154, 71);
     float: right;
 }
+
+/* Картинки (Італія) */
 
 #it-im1 {
     margin-left: 20px;
@@ -203,8 +237,7 @@ p#firstp {
     margin-left: 20px;
 }
 
-
-/* заглавне слово */
+/* заглавне слово кольорами Італії */
 
 #h1-it1 {
     font-size: 29pt;
@@ -225,14 +258,21 @@ p#firstp {
 }
 
 
+
+
+
 /* Дания  */
+
+/* Головна панель з картинкою на задньому фоні */
 
 #dm-jbt {
     background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1612/Copenhagen-Denmark-city-buildings-houses-sunset-clouds_1920x1080.jpg);
     background-position: center -320px;
 }
 
-#dmhead {
+/* Заголовок "Данія" */
+
+#dm-head {
     margin-top: -40px;
     font-size: 65pt;
     font-weight: bold;
@@ -241,17 +281,74 @@ p#firstp {
     margin-left: 15px;
 }
 
-#dmmain {
+/* Опис Данії кількома реченнями */
+
+#dm-main {
     font-size: 17pt;
     padding: 10px;
     text-align: justify;
     color: rgb(29, 26, 26);
 }
 
+/* Табличка */
+
 .dm-box {
     overflow: auto;
     height: 500px;
 }
+
+/* Текст, виділений в рамочці */
+
+#dm-brdtxt {
+    border: 4px solid rgba(187, 189, 70, 0.555);
+    width: 340px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 6px #867112;
+    background-color: rgb(236, 238, 141);
+    overflow: auto;
+}
+
+/* Текст виділений в рамочці (заголовок) */
+
+#dm-p {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* Цетральний блок тексту  */
+
+#dm-d {
+    padding-left: 40px;
+    overflow: auto;
+    height: 500px;
+}
+
+/* Картинки (Данія) */
+
+#dm-im1 {
+    margin-left: 20px;
+}
+
+#dm-im2 {
+    margin-left: 20px;
+}
+
+#dm-im3 {
+    margin-left: 20px;
+}
+
+#dm-im4 {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* Загальні теги */
 
 img:hover {
     border: 2px solid rgb(210, 247, 141);
@@ -263,45 +360,20 @@ h2:hover {
     padding: 1px;
 }
 
-#brdtxt-dm {
-    border: 4px solid rgba(187, 189, 70, 0.555);
-    width: 340px;
-    height: 250px;
-    padding: 5px;
+body {
+    background-color: rgb(233, 223, 223);
+    margin-bottom: 17px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    position: relative;
     border-radius: 8px;
-    box-shadow: 4px 4px 4px 6px #867112;
-    background-color: rgb(236, 238, 141);
-    overflow: auto;
 }
 
-#p-dm {
-    font-weight: bold;
-    font-size: 14pt;
+td {
+    background-color: #e7c6c0;
 }
-
-#d3 {
-    padding-left: 40px;
-    overflow: auto;
-    height: 500px;
-}
-
-#im1-dm {
-    margin-left: 20px;
-}
-
-#im2-dm {
-    margin-left: 20px;
-}
-
-#im3-dm {
-    margin-left: 20px;
-}
-
-#im4-dm {
-    margin-top: 20px;
-}
-
-
-
-
-
