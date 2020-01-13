@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="userId" class="control-label col-md-3">User:</label>
+                <div class="col-md-9">
+
+                    <input type="text" name="userId" id="userId" class="form-control" placeholder="Mr/Mrs/Sen">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="username" class="control-label col-md-3">Фамилия, имя</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Иванов Иван">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label col-md-3">Email</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </div>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="abc@example.com">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="work" class="control-label col-md-3">Должность / специальность​</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-briefcase"></span>
+                        </div>
+                        <input type="text" name="work" id="work" class="form-control" placeholder="Врач">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city" class="control-label col-md-3">Город</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-home"></span>
+                        </div>
+                        <input type="text" name="city" id="city" class="form-control" placeholder="Москва">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="notes" class="control-label col-md-5">Как нам сделать конференцию более полезной и
+                    интересной?</label>
+                <div class="col-md-6">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uchastie" class="control-label col-md-3">Участие:</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <input type="text" name="uchastie" id="uchastie" class="form-control" placeholder="очное/заочное">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="city" class="control-label col-md-3">Участник: доктор наук</label>
+                <div class="col-md-9">
+
+                    <div class="col-md-3 btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" id="first" name="sample" />
+                            Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" id="second" name="sample" />
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-warning col-md-offset-3 col-md-3">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
