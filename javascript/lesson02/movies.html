@@ -12,42 +12,53 @@
             year: "2019",
             manufacturer: "Walt Disney Studios Motion Pictures, B&H Film Distribution",
             country: "The USA",
-            url: "https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)"
+            url: "https://upload.wikimedia.org/wikipedia/uk/thumb/e/ee/%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%D1%83_%C2%AB%D0%9A%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB%C2%BB_%28%D1%82%D1%80%D0%B5%D1%82%D1%96%D0%B9%29.png/250px-%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%D1%83_%C2%AB%D0%9A%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB%C2%BB_%28%D1%82%D1%80%D0%B5%D1%82%D1%96%D0%B9%29.png"
         }, {
             title: "Ant-Man",
             year: 2015,
             manufacturer: "Walt Disney Studios Motion Pictures",
             country: "The USA",
-            url: "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%BC%D1%83%D1%80%D0%B0%D0%B2%D0%B5%D0%B9_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"
+            url: "https://upload.wikimedia.org/wikipedia/ru/thumb/7/75/Ant-Man_poster.jpg/272px-Ant-Man_poster.jpg"
         }, {
             title: "The Avengers",
             year: 2012,
             manufacturer: "Walt Disney Studios Motion Pictures",
             country: "The USA",
-            url: "https://ru.wikipedia.org/wiki/%D0%9C%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2012)"
+            url: "https://upload.wikimedia.org/wikipedia/ru/thumb/3/3c/The_Avengers_2012_logo.jpg/272px-The_Avengers_2012_logo.jpg"
         }, {
             title: "Spider-Man: Homecoming",
             year: 2017,
             manufacturer: "Walt Disney Studios Motion Pictures",
             country: "The USA",
-            url: "https://rezka.ag/films/fiction/23757-chelovek-pauk-vozvraschenie-domoy-2017.html"
+            url: "https://static.hdrezka.ac/i/2017/9/29/zfea0c86c5fb5tv36q66e.jpg"
         }, {
             title: "Iron Man",
             year: 2008,
             manufacturer: "Paramount Pictures",
             country: "The USA",
-            url: "https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B0_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)"
+            url: "https://upload.wikimedia.org/wikipedia/uk/f/fa/%D0%97%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B0_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0_%28%D1%84%D1%96%D0%BB%D1%8C%D0%BC%2C_2008%29.jpeg"
         }, {
             title: "Black Panther",
             year: 2018,
             manufacturer: "Walt Disney Studios Motion Pictures, B&H Film Distribution",
             country: "The USA",
-            url: "https://uk.wikipedia.org/wiki/%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2018)"
-        }]
+            url: "https://upload.wikimedia.org/wikipedia/uk/thumb/c/c8/%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_2017_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%B4%D0%BE_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%29.jpg/252px-%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_2017_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%B4%D0%BE_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%29.jpg"
+        }];
+
+        function fillTable() {
+            document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
+            for (let index = 0; index < movies.length; index++) {
+                let element = movies[index];
+                document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
+                    element.country + "</td>" +
+                    "<td><img style='width: 240px;' src='" + element.url + "' alt='" + element.title + "'></td>");
+            }
+            document.writeln("</tbody></table>");
+        }
     </script>
 </head>
 
-<body>
+<body onload="fillTable()">
 
 </body>
 
