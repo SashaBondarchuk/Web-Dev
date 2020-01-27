@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script>
         var movies = [{
             title: "Captain Marvel",
@@ -64,32 +64,45 @@
         //         return 1;
         // }
 
-        function fillTable() {
-            // movies.sort(compareBycountry);
-            document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
-            for (let index = 0; index < movies.length; index++) {
-                let element = movies[index];
-                document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
-                    element.country + "</td>" +
-                    "<td><img style='width: 240px;' src='" + element.url + "' alt='" + element.title + "'></td>");
-            }
-            document.writeln("</tbody></table>");
-        }
+        // function fillTable() {
+        //     // movies.sort(compareBycountry);
+        //     document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
+        //     for (let index = 0; index < movies.length; index++) {
+        //         let element = movies[index];
+        //         document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
+        //             element.country + "</td>" +
+        //             "<td><img style='width: 240px;' src='" + element.url + "' alt='" + element.title + "'></td>");
+        //     }
+        //     document.writeln("</tbody></table>");
+        // }
 
         function fillThumbnail() {
-
-            for (let index = 0; index < movies.length; index++) {
-                document.writeln();
+            var body = document.getElementById('movie_list');
+            body.innerHTML += ('<div class="row">')
+            for (const key in movies) {
+                document.writeln('<div class="col-sm-6 col-md-4">' +
+                    '<div class="thumbnail">' +
+                    '<img style="width: 240px"src="' + movies[key].url + '" alt="' + movies[key].title + '">' +
+                    '<div class="caption">' +
+                    '<h3>' + movies[key].title + '</h3>' +
+                    '<p>' + movies[key].year + '' + movies[key].manufacturer + '</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>');
             }
+            body.innerHTML += ('</div>');
         }
     </script>
 </head>
 
-<body onload="fillTable()">
+<body onload="fillThumbnail()">
+    <div id="movie_list" class="container">
 
+    </div>
 
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src=" https://code.jquery.com/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
