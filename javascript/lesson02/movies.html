@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script>
         var movies = [{
             title: "Captain Marvel",
@@ -23,13 +24,13 @@
             title: "The Avengers",
             year: 2012,
             manufacturer: "Walt Disney Studios Motion Pictures",
-            country: "The USA",
+            country: "a The USA",
             url: "https://upload.wikimedia.org/wikipedia/ru/thumb/3/3c/The_Avengers_2012_logo.jpg/272px-The_Avengers_2012_logo.jpg"
         }, {
             title: "Spider-Man: Homecoming",
             year: 2017,
             manufacturer: "Walt Disney Studios Motion Pictures",
-            country: "The USA",
+            country: "a The USA",
             url: "https://static.hdrezka.ac/i/2017/9/29/zfea0c86c5fb5tv36q66e.jpg"
         }, {
             title: "Iron Man",
@@ -45,7 +46,26 @@
             url: "https://upload.wikimedia.org/wikipedia/uk/thumb/c/c8/%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_2017_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%B4%D0%BE_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%29.jpg/252px-%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_2017_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%B4%D0%BE_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%29.jpg"
         }];
 
+        // function compareByTitle(MovieA, MovieB) {
+        //     if (MovieA.title == MovieB.title)
+        //         return 0;
+        //     else if (MovieA.title < MovieB.title)
+        //         return -1;
+        //     else
+        //         return 1;
+        // }
+
+        // function compareBycountry(MovieA, MovieB) {
+        //     if (MovieA.country == MovieB.country)
+        //         return 0;
+        //     else if (MovieA.country > MovieB.country)
+        //         return -1;
+        //     else
+        //         return 1;
+        // }
+
         function fillTable() {
+            // movies.sort(compareBycountry);
             document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
             for (let index = 0; index < movies.length; index++) {
                 let element = movies[index];
@@ -55,11 +75,21 @@
             }
             document.writeln("</tbody></table>");
         }
+
+        function fillThumbnail() {
+
+            for (let index = 0; index < movies.length; index++) {
+                document.writeln();
+            }
+        }
     </script>
 </head>
 
 <body onload="fillTable()">
 
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
