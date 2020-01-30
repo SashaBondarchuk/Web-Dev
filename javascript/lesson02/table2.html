@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        var peoples = [{
+            Name: "James Bond",
+            Age: "38",
+            Salary: "58",
+        }, {
+            Name: "Crazy Max",
+            Age: "28",
+            Salary: "21",
+        }, {
+            Name: "Sten Lee",
+            Age: "90",
+            Salary: "55",
+        }, {
+            Name: "Barry Allen",
+            Age: "21",
+            Salary: "96",
+        }, {
+            Name: "Fire Man",
+            Age: "33",
+            Salary: "424",
+        }, {
+            Name: "Kiany Rivz",
+            Age: "42",
+            Salary: "971",
+        }, ]
+
+        function copareByAge(peoplesA, peoplesB) {
+            if (peoplesA.Age == peoplesB.Age) {
+                return 0;
+            } else if (peoplesA.Age > peoplesB.Age)
+                return 1;
+            else
+                return -1;
+        }
+
+        function copareBySalary(peoplesA, peoplesB) {
+            if (peoplesA.Salary == peoplesB.Salary) {
+                return 0;
+            } else if (peoplesA.Salary > peoplesB.Salary)
+                return 1;
+            else
+                return -1;
+        }
+
+        function fillTable() {
+            peoples.sort(copareByAge);
+            document.writeln("<table style='border: 2px solid black'><thead><tr><th>Name</th><th>Age</th><th>Salary</th></tr></thead><tbody>");
+            for (let index = 0; index < movies.length; index++) {
+                let element = movies[index];
+                document.writeln("<tr><td>" + element.Name + "</td><td>" + element.Age + "</td><td>" + element.Salary + "</td>");
+            }
+            document.writeln("</tbody></table>");
+        }
+    </script>
+</head>
+
+<body onload="fillTable()">
+
+</body>
+
+</html>
