@@ -9,31 +9,118 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
+    <script>
+        function colortable() {
+            var s = "";
+            var st = "";
+            var st1 = "";
+            var st2 = "";
+            var table1 = document.getElementById('table1');
+            let p = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+            for (let i = 1; i <= 3; i++) {
+
+                for (let j = 2; j <= 3; j++) {
+                    if (j == 2) {
+                        st += '<td style="background-color: green;">' + p + '</td>';
+                    } else {
+                        st += '<td style="background-color: yellow;">' + p + '</td>';
+                    }
+                }
+
+                if (i == 1) {
+                    s += '<td style="background-color: red;">' + p + '</td>';
+                    table1.innerHTML += ('<tr>' + s + st + '</tr>');
+                }
+
+
+
+                //        for (let k = 2; k <= 3; k++) 
+                //           {
+                //             if (k == 2)
+                //               {
+                //                 st1 += '<td style="background-color: green;">' + p + '</td>';
+                //               }
+                //             else 
+                //               {
+                //                 st1 += '<td style="background-color: yellow;">' + p + '</td>';
+                //               }
+                //           }
+                else if (i == 2) {
+                    s += '<td style="background-color: green;">' + p + '</td>';
+                    table1.innerHTML += ('<tr>' + s + st1 + '</tr>');
+
+                }
+
+
+
+                //        for (let l = 1; l <= 2; l++) 
+                //           {
+                //             if (l == 1)
+                //               {
+                //                 st2 += '<td style="background-color: green;">' + p + '</td>';
+                //               }
+                //             else 
+                //               {
+                //                 st2 += '<td style="background-color: red;">' + p + '</td>';
+                //               }
+                //           }
+                else {
+                    s += '<td style="background-color: blue;">' + p + '</td>';
+                    table1.innerHTML += ('<tr>' + s + st2 + '</tr>');
+                }
+                s = '';
+            }
+
+
+        }
+
+        //   for (i = 2; i <= 3; i++) 
+        //      {
+        //        s =+ '<td>' + i + '</td>';
+        //           for (let j = 2; j <= 3; j++)
+        //             {
+        //               let r = i * j;
+
+        //               if (r < 4)
+        //                 {
+        //                   r += ' ';
+        //                 }
+
+        //             s += '<td>' + r + '</td>';
+
+        //             }
+
+        //         table1.innerHTML += ('<tr>' + s + '</tr>');
+        //         s='';
+        //      }
+    </script>
 </head>
 
-<body>
-    <table style="border: 5px solid black;">
-        <tr>
-            <td style="background-color: red; width: 100px; height: 100px;">&nbsp;</td>
-            <td style="background-color: green;  width: 100px; height: 100px;"></td>
-            <td style="background-color: yellow; width: 100px; height: 100px;">&nbsp;</td>
+<body onload="colortable()">
+
+
+    <table id="table1">
+        <!-- <tr>
+            <td style="background-color: red;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: green;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: yellow;">&nbsp;&nbsp;&nbsp;</td>
         </tr>
         <tr>
-            <td style="background-color: green; width: 100px; height: 100px;"></td>
-            <td style="background-color: red; width: 100px; height: 100px;">&nbsp;</td>
-            <td style="background-color: blue; width: 100px; height: 100px;">&nbsp;</td>
+            <td style="background-color: green;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: red;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: blue;">&nbsp;&nbsp;&nbsp;</td>
         </tr>
         <tr>
-            <td style="background-color: blue; width: 100px; height: 100px;">
-                <td style="background-color: green; width: 100px; height: 100px;"></td>
-                <td style="background-color: red; width: 100px; height: 100px;">&nbsp;</td>
-        </tr>
+            <td style="background-color: blue;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: green;">&nbsp;&nbsp;&nbsp;</td>
+            <td style="background-color: red;">&nbsp;&nbsp;&nbsp;</td>
+        </tr> -->
     </table>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
-</html>.
+</html>
