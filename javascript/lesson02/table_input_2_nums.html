@@ -46,16 +46,19 @@
 
                 st2 += '<td>' + j + '</td>';
 
+                if (i <= num2) {
+                    if (i % 2 == 0) {
+                        st1 += '<td>' + i + '</td>';
+                        i++;
+                        Result.innerHTML += ('<tr>' + st2 + st1 + '</tr>');
+                        st1 = '';
 
-                if (i % 2 == 0) {
-                    st1 += '<td>' + i + '</td>';
-                    Result.innerHTML += ('<tr>' + st2 + st1 + '</tr>');
-                    st1 = '';
-                    st2 = '';
-                    i++;
-                } else {
-                    i++;
+                    } else {
+                        i++;
+                        j--;
+                    }
                 }
+                st2 = '';
             }
 
 

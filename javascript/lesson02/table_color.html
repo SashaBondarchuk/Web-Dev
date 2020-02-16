@@ -17,64 +17,61 @@
             var st2 = "";
             var table1 = document.getElementById('table1');
             let p = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+            let n = 3;
 
-            for (let i = 1; i <= 3; i++) {
-
-                for (let j = 2; j <= 3; j++) {
-                    if (j == 2) {
-                        st += '<td style="background-color: green;">' + p + '</td>';
-                    } else {
-                        st += '<td style="background-color: yellow;">' + p + '</td>';
-                    }
-                }
-
+            for (let i = 1; i <= n; i++) {
                 if (i == 1) {
+
+                    for (let j = 2; j <= n; j++) {
+                        if (j == 2) {
+                            st += '<td style="background-color: green;">' + p + '</td>';
+                        } else {
+                            st += '<td style="background-color: yellow;">' + p + '</td>';
+                        }
+                    }
                     s += '<td style="background-color: red;">' + p + '</td>';
                     table1.innerHTML += ('<tr>' + s + st + '</tr>');
-                }
+                } else if (i == 2) {
 
-
-
-                //        for (let k = 2; k <= 3; k++) 
-                //           {
-                //             if (k == 2)
-                //               {
-                //                 st1 += '<td style="background-color: green;">' + p + '</td>';
-                //               }
-                //             else 
-                //               {
-                //                 st1 += '<td style="background-color: yellow;">' + p + '</td>';
-                //               }
-                //           }
-                else if (i == 2) {
+                    for (let k = 2; k <= n; k++) {
+                        if (k == 2) {
+                            st1 += '<td style="background-color: red;">' + p + '</td>';
+                        } else {
+                            st1 += '<td style="background-color: blue;">' + p + '</td>';
+                        }
+                    }
                     s += '<td style="background-color: green;">' + p + '</td>';
                     table1.innerHTML += ('<tr>' + s + st1 + '</tr>');
+                } else {
 
-                }
-
-
-
-                //        for (let l = 1; l <= 2; l++) 
-                //           {
-                //             if (l == 1)
-                //               {
-                //                 st2 += '<td style="background-color: green;">' + p + '</td>';
-                //               }
-                //             else 
-                //               {
-                //                 st2 += '<td style="background-color: red;">' + p + '</td>';
-                //               }
-                //           }
-                else {
+                    for (let l = 2; l <= n; l++) {
+                        if (l == 2) {
+                            st2 += '<td style="background-color: green;">' + p + '</td>';
+                        } else {
+                            st2 += '<td style="background-color: red;">' + p + '</td>';
+                        }
+                    }
                     s += '<td style="background-color: blue;">' + p + '</td>';
                     table1.innerHTML += ('<tr>' + s + st2 + '</tr>');
+                    st2 = '';
                 }
                 s = '';
             }
-
-
         }
     </script>
+    <style>
+        tr,
+        td {
+            margin: 15px;
+            padding: 15px;
+        }
+        
+        table,
+        tr,
+        td {
+            border: 10px solid rgb(185, 175, 160);
+        }
+    </style>
 </head>
 
 <body onload="colortable()">

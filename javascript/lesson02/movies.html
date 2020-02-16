@@ -10,7 +10,7 @@
     <script>
         var movies = [{
             title: "Captain Marvel",
-            year: "2019",
+            year: 2019,
             manufacturer: "Walt Disney Studios Motion Pictures, B&H Film Distribution",
             country: "The USA",
             url: "https://upload.wikimedia.org/wikipedia/uk/thumb/e/ee/%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%D1%83_%C2%AB%D0%9A%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB%C2%BB_%28%D1%82%D1%80%D0%B5%D1%82%D1%96%D0%B9%29.png/250px-%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D1%84%D1%96%D0%BB%D1%8C%D0%BC%D1%83_%C2%AB%D0%9A%D0%B0%D0%BF%D1%96%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB%C2%BB_%28%D1%82%D1%80%D0%B5%D1%82%D1%96%D0%B9%29.png"
@@ -64,17 +64,17 @@
         //         return 1;
         // }
 
-        // function fillTable() {
-        //     // movies.sort(compareBycountry);
-        //     document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
-        //     for (let index = 0; index < movies.length; index++) {
-        //         let element = movies[index];
-        //         document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
-        //             element.country + "</td>" +
-        //             "<td><img style='width: 240px;' src='" + element.url + "' alt='" + element.title + "'></td>");
-        //     }
-        //     document.writeln("</tbody></table>");
-        // }
+        function fillTable() {
+            movies.sort(compareBycountry);
+            document.writeln("<table style='border: 2px solid black'><thead><tr><th>title</th><th>year</th><th>manufacturer</th><th>country</th><th>url</th></tr></thead><tbody>");
+            for (let index = 0; index < movies.length; index++) {
+                let element = movies[index];
+                document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
+                    element.country + "</td>" +
+                    "<td><img style='width: 240px;' src='" + element.url + "' alt='" + element.title + "'></td>");
+            }
+            document.writeln("</tbody></table>");
+        }
 
         function fillThumbnail() {
             var body = document.getElementById('movie_list');

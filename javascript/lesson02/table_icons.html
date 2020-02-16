@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var сountries = [{
+            country: "Aland Islands",
+            abbreviation: "ax",
+        }, {
+            country: "Albania",
+            abbreviation: "al ",
+        }, {
+            country: "Austria",
+            abbreviation: "at",
+        }, {
+            country: "Belarus",
+            abbreviation: "by",
+        }, {
+            country: "Belgium",
+            abbreviation: "be",
+        }, {
+            country: "Bosnia and Herzegovina",
+            abbreviation: "ba",
+        }, {
+            country: "Bulgaria",
+            abbreviation: "bg",
+        }, {
+            country: "Croatia",
+            abbreviation: "hr",
+        }, {
+            country: "Cyprus",
+            abbreviation: "cy",
+        }, {
+            country: "Estonia",
+            abbreviation: "ee",
+        }, {
+            country: "Faroe Islands",
+            abbreviation: "fo",
+        }, {
+            country: "Finland",
+            abbreviation: "fi",
+        }, {
+            country: "France",
+            abbreviation: "fr",
+        }, {
+            country: "Germany",
+            abbreviation: "de",
+        }, {
+            country: "Gibraltar",
+            abbreviation: "gi",
+        }, {
+            country: "Greece",
+            abbreviation: "gr",
+        }, {
+            country: "Guernsey",
+            abbreviation: "gg",
+        }, {
+            country: "Holy See",
+            abbreviation: "va",
+        }, {
+            country: "Hungary",
+            abbreviation: "hu",
+        }, {
+            country: "Iceland",
+            abbreviation: "is",
+        }, {
+            country: "Irelands",
+            abbreviation: "ie",
+        }, {
+            country: " Isle of Man",
+            abbreviation: "im",
+        }, {
+            country: "Italy",
+            abbreviation: "it",
+        }, {
+            country: "Jersey",
+            abbreviation: "je",
+        }, {
+            country: "Kosovo",
+            abbreviation: "xk",
+        }, {
+            country: "Latvia",
+            abbreviation: "lv",
+        }, {
+            country: "Liechtenstein",
+            abbreviation: "li",
+        }, {
+            country: "Lithuania",
+            abbreviation: "lt",
+        }, {
+            country: "Luxembourg",
+            abbreviation: "lu",
+        }, {
+            country: "Malta",
+            abbreviation: "ma",
+        }, {
+            country: "Moldova",
+            abbreviation: "md",
+        }, {
+            country: "North Macedonia",
+            abbreviation: "mk",
+        }, {
+            country: "Northern Ireland",
+            abbreviation: "gb-nir",
+        }, {
+            country: " Norway",
+            abbreviation: "no",
+        }, {
+            country: "Poland",
+            abbreviation: "pl",
+        }, {
+            country: "Portugal",
+            abbreviation: "pt",
+        }, {
+            country: "Romania",
+            abbreviation: "ro",
+        }, {
+            country: "Russia",
+            abbreviation: "ru",
+        }, {
+            country: "San Marino",
+            abbreviation: "sm",
+        }, {
+            country: "Scotland",
+            abbreviation: "gb-sct",
+        }, {
+            country: "Serbia",
+            abbreviation: "rs",
+        }, {
+            country: "Slovakia",
+            abbreviation: "sk",
+        }, {
+            country: "Slovenia",
+            abbreviation: "sl",
+        }, {
+            country: "Spain",
+            abbreviation: "es",
+        }, {
+            country: " Svalbard and Jan Mayen",
+            abbreviation: "sj",
+        }, {
+            country: "Sweden",
+            abbreviation: "se",
+        }, {
+            country: "Switzerland",
+            abbreviation: "ch",
+        }, {
+            country: "Ukraine",
+            abbreviation: "ua",
+        }, {
+            country: "United Kingdom",
+            abbreviation: "gb",
+        }, {
+            country: "Wales",
+            abbreviation: "gb-wls",
+        }];
+
+        function makeTable() {
+            var document1 = document.getElementById('document1');
+            var n = сountries.length / 6;
+            var st = "";
+            var s = 0;
+            var e = 5;
+            for (let i = 0; i <= n; i++) {
+                for (let j = s; j <= e; j++) {
+                    let element = сountries[j];
+                    st += ('<td>' + element.abbreviation + ' ' + element.country + '<span class="flag-icon flag-icon-' + element.abbreviation + '"></span>' + '</td>');
+                }
+                document1.innerHTML += ('<tr>' + st + '</tr>');
+                st = '';
+                s += 5;
+                e += 5;
+            }
+        }
+    </script>
+
+    <style>
+        tr,
+        td {
+            border: 3px solid rgb(106, 33, 33);
+            border-radius: 8px;
+            /* margin: 15px; */
+            padding: 25px;
+            font-size: 15pt;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body onload="makeTable()">
+
+    <table id="document1">
+
+    </table>
+
+</body>
+
+</html>
