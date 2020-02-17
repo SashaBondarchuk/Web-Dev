@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+
     <script>
         var сountries = [{
             country: "Aland Islands",
@@ -161,11 +164,10 @@
 
         function makeTable() {
             var document1 = document.getElementById('document1');
-            var n = сountries.length / 6;
             var st = "";
             var s = 0;
             var e = 5;
-            for (let i = 0; i <= n; i++) {
+            for (let i = 0; i <= сountries.length / 6; i++) {
                 for (let j = s; j <= e; j++) {
                     let element = сountries[j];
                     st += ('<td>' + element.abbreviation + ' ' + element.country + '<span class="flag-icon flag-icon-' + element.abbreviation + '"></span>' + '</td>');
@@ -183,7 +185,6 @@
         td {
             border: 3px solid rgb(106, 33, 33);
             border-radius: 8px;
-            /* margin: 15px; */
             padding: 25px;
             font-size: 15pt;
             font-weight: bold;
