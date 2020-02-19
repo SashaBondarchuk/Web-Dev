@@ -17,6 +17,9 @@
             country: "Albania",
             abbreviation: "al ",
         }, {
+            country: "Andorra",
+            abbreviation: "ad ",
+        }, {
             country: "Austria",
             abbreviation: "at",
         }, {
@@ -37,6 +40,15 @@
         }, {
             country: "Cyprus",
             abbreviation: "cy",
+        }, {
+            country: "Czech Republic",
+            abbreviation: "cz",
+        }, {
+            country: "Denmark",
+            abbreviation: "dk",
+        }, {
+            country: "England",
+            abbreviation: "gb-eng",
         }, {
             country: "Estonia",
             abbreviation: "ee",
@@ -104,6 +116,15 @@
             country: "Moldova",
             abbreviation: "md",
         }, {
+            country: "Monaco",
+            abbreviation: "mc",
+        }, {
+            country: "Montenegro",
+            abbreviation: "me",
+        }, {
+            country: "Netherlands",
+            abbreviation: "nl",
+        }, {
             country: "North Macedonia",
             abbreviation: "mk",
         }, {
@@ -165,29 +186,73 @@
         function makeTable() {
             var document1 = document.getElementById('document1');
             var st = "";
-            var s = 0;
-            var e = 5;
-            for (let i = 0; i <= сountries.length / 6; i++) {
-                for (let j = s; j <= e; j++) {
+            var st1 = "";
+            var p = 0;
+            var e = 6;
+            var n = Math.floor(сountries.length / 6); //9
+            for (let i = 0; i < n; i++) { //  0-9
+                for (let j = p; j < e; j++) { // 0-6
                     let element = сountries[j];
                     st += ('<td>' + element.abbreviation + ' ' + element.country + '<span class="flag-icon flag-icon-' + element.abbreviation + '"></span>' + '</td>');
                 }
                 document1.innerHTML += ('<tr>' + st + '</tr>');
                 st = '';
-                s += 5;
-                e += 5;
+                p += 6;
+                e += 6;
             }
+            // перший спосіб
+            if (сountries.length % 6 != 0) {
+                let y = сountries.length - сountries.length % 6; //57-3=54
+                let y1 = сountries.length - 1; //56
+                for (let h = y; h <= y1; h++) {
+                    let elem = сountries[h];
+                    st1 += ('<td>' + elem.abbreviation + ' ' + elem.country + '<span class="flag-icon flag-icon-' + elem.abbreviation + '"></span>' + '</td>');
+                }
+                document1.innerHTML += ('<tr>' + st1 + '</tr>');
+                st1 = '';
+            }
+
+            // другий спосіб 
+
+            // if (сountries.length % 6 != 0) { // якщо остача не = 0, то
+            //     let y = сountries.length - сountries.length % 6; // 57-3 = 54
+            //     while (y <= сountries.length) { //54<57
+            //         let elem = сountries[y];
+            //         y++;
+            //         st1 += ('<td>' + elem.abbreviation + ' ' + elem.country + '<span class="flag-icon flag-icon-' + elem.abbreviation + '"></span>' + '</td>');
+            //         if (y == сountries.length) { // 54++;55++;56++ = 57
+            //             document1.innerHTML += ('<tr>' + st1 + '</tr>');
+            //         }
+            //     }
+            // }
         }
     </script>
 
     <style>
-        tr,
         td {
-            border: 3px solid rgb(106, 33, 33);
+            border: 2px solid rgb(106, 33, 33);
             border-radius: 8px;
-            padding: 25px;
+            padding: 10px;
             font-size: 15pt;
-            font-weight: bold;
+            font-weight: 300;
+            text-align: center;
+            /* margin: 10px; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        td:hover {
+            background: rgb(219, 221, 221);
+        }
+        
+        .flag-icon {
+            width: 170px;
+            height: 80px;
+        }
+        
+        body {
+            width: 1280px;
+            height: 720px;
+            /* margin-left: 175px; */
         }
     </style>
 

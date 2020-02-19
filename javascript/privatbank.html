@@ -1,1 +1,142 @@
-курси валют табличка вал продажа покупка 2 банкомати кп 1 адрес 2 3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var ATMs = [{
+            adress: "проспект Грушевського, 25",
+        }, {
+            adress: "улица Героев Небесной Сотни, 42/1",
+        }, {
+            adress: "вулиця Привокзальна, 18",
+        }, {
+            adress: "проспект Грушевського, 21",
+        }, {
+            adress: "вулиця Огієнка, 20",
+        }, {
+            adress: "проспект Грушевського, 56",
+        }, {
+            adress: "вулиця Огієнка, 61",
+        }, {
+            adress: "проспект Грушевського, 62А",
+        }, {
+            adress: "проспект Грушевського, 25",
+        }, {
+            adress: "Новий План",
+        }, {
+            adress: "вулиця Шевченка, 13",
+        }, {
+            adress: "вулиця Соборна, 29А",
+        }, {
+            adress: "вулиця Лесі Українки, 34",
+        }, {
+            adress: "улица Панивецкая, 13",
+        }, {
+            adress: "вулиця Князя Володимира, 13",
+        }, {
+            adress: "Нігинське шосе, 42/1",
+        }, {
+            adress: "улица Старобульварная, 6",
+        }, {
+            adress: "вулиця Космонавтів, 10",
+        }, {
+            adress: "вулиця Васильєва, 1",
+        }, {
+            adress: "вулиця Огієнка, 41",
+        }];
+        var currency = [{
+            name: "Dollar",
+            buy: "24,310",
+            sell: "24,500"
+        }, {
+            name: "Euro",
+            buy: "26,250",
+            sell: "26,550"
+        }, {
+            name: "Ruble",
+            buy: "24,310",
+            sell: "24,500"
+        }];
+
+        function createTable() {
+            var tabl1 = document.getElementById('tabl1');
+            var tabl2 = document.getElementById('tabl2');
+            var st = "";
+            var st1 = "";
+            var st2 = "";
+            // console.log(ATMs.length);
+
+            for (let i = 0; i < ATMs.length; i++) {
+                let element = ATMs[i];
+                i++;
+                st1 += ('<td>' + i + ' ' + '</td>');
+                st += ('<td>' + element.adress + '</td>');
+                tabl1.innerHTML += ('<tr>' + st1 + st + '</tr>');
+                st = '';
+                st1 = '';
+                i--;
+            }
+            tabl2.innerHTML += ('<tr>' + '<td class="tbhead">' + "Valute" + '</td>' + '<td class="tbhead">' + "Buy" + '</td>' + '<td class="tbhead">' + "Sell" + '</td>' + '</tr>');
+            for (let j = 0; j < currency.length; j++) {
+                let element2 = currency[j];
+                st2 += ('<td id="money">' + element2.name + '</td>' + '<td id="buy">' + element2.buy + '</td>' + '<td id="sell">' + element2.sell + '</td>');
+                tabl2.innerHTML += ('<tr>' + st2 + '</tr>');
+                st2 = '';
+            }
+
+        }
+    </script>
+
+
+    <style>
+        td {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: rgb(0, 169, 68);
+        }
+        
+        #money {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 121, 9, 1) 45%, rgba(0, 255, 74, 1) 100%);
+        }
+        
+        #buy {
+            background: rgb(4, 0, 36);
+            background: linear-gradient(90deg, rgba(4, 0, 36, 1) 0%, rgba(9, 106, 121, 1) 45%, rgba(0, 136, 255, 1) 100%);
+        }
+        
+        #sell {
+            background: rgb(4, 0, 36);
+            background: linear-gradient(90deg, rgba(4, 0, 36, 1) 0%, rgba(121, 9, 110, 1) 20%, rgba(255, 0, 0, 1) 100%);
+        }
+        
+        td:hover {
+            background: rgb(0, 133, 24);
+            background: linear-gradient(90deg, rgb(98, 190, 0) 20%, rgb(0, 125, 8) 50%, rgb(0, 79, 5) 100%);
+        }
+        
+        body {
+            background-color: rgb(150, 255, 112);
+        }
+        
+        .tbhead {
+            background-color: rgb(0, 103, 2);
+        }
+    </style>
+</head>
+
+<body onload="createTable()">
+    <table id="tabl1">
+
+    </table>
+    <table id="tabl2">
+
+    </table>
+</body>
+
+</html>
