@@ -200,7 +200,7 @@
                 p += 6;
                 e += 6;
             }
-            // перший спосіб
+
             if (сountries.length % 6 != 0) {
                 let y = сountries.length - сountries.length % 6; //57-3=54
                 let y1 = сountries.length - 1; //56
@@ -212,19 +212,6 @@
                 st1 = '';
             }
 
-            // другий спосіб 
-
-            // if (сountries.length % 6 != 0) { // якщо остача не = 0, то
-            //     let y = сountries.length - сountries.length % 6; // 57-3 = 54
-            //     while (y <= сountries.length) { //54<57
-            //         let elem = сountries[y];
-            //         y++;
-            //         st1 += ('<td>' + elem.abbreviation + ' ' + elem.country + '<span class="flag-icon flag-icon-' + elem.abbreviation + '"></span>' + '</td>');
-            //         if (y == сountries.length) { // 54++;55++;56++ = 57
-            //             document1.innerHTML += ('<tr>' + st1 + '</tr>');
-            //         }
-            //     }
-            // }
         }
     </script>
 
