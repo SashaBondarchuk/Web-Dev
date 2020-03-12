@@ -7,6 +7,7 @@ var router = express.Router();
 //         title: 'My Demo Prog'
 //     });
 // });
+
 router.post('/', function(req, res) {
     if (isNaN(req.body.firstvalue && req.body.firstvalue) === true) {
         res.render('Not a Number!');
