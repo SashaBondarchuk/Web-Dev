@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+<h1>{{title}}</h1>
+
+<form method="POST">
+
+    <fieldset>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+        
+        <button type="submit">Search</button>
+    </fieldset>
+
+    <output>
+        <table>
+            <tbody>
+                {{#each cities }}
+                <tr>
+                    <td><span class="flag-icon flag-icon-{{Country}}"></span></td>
+                    <td>{{City}}</td>
+                    <td>{{AccentCity}}</td>
+                    <td>{{Region}}</td>
+                    <td>{{Population}}</td>
+                    <td>{{Latitude}}</td>
+                    <td>{{Longitude}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table> 
+    </output>
+</form>

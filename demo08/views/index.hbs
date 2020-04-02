@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="jumbotron" style="background-position: center; background-image: url(https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1024/https://english-skype.net/wp-content/uploads/2019/07/1140-yeager-sell-your-used-books.imgcache.rev6feda141288df73e8fd100822bb375ea-1024x588.jpg);">
+        <h1 style="color: #0d3967; text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, #cad5e2 3px 3px 0; #cad5e2 4px 4px 0, #cad5e2 5px 5px 0;">{{title}}</h1>
+        <div><a class="btn btn-info btn-lg" href="/create">Create a new document</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Book title</th>
+                        <th>Published by</th>
+                        <th>Year</th>
+                        <th>Author</th>
+                        <th>Number Of Pages</th>
+
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each my_books }}
+                    <tr>
+                        <td>{{Book}}</span></td>
+                        <td>{{Publication}}</td>
+                        <td>{{Year}}</span></td>
+                        <td>{{Author}}</td>
+                        <td>{{NumberOfPages}}</td>
+                        <td>
+                            <a class="btn btn-primary" href="/edit/{{_id}}"><span
+                                    class="glyphicon glyphicon-pencil"></span></a>
+                            |
+                            <a class="btn btn-danger" href="/delete/{{_id}}"
+                                onclick="return confirm('Are you sure?');"><span
+                                    class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

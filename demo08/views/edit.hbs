@@ -1,0 +1,28 @@
+<form method="post">
+
+    <fieldset>
+        <div class="form-group">
+            <label for="Book">Book title</label>
+            <input type="text" id="Book" class="form-control" name="Book" value="{{book.Book}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Publication">Published by</label>
+            <input type="text" id="Publication" class="form-control" name="Publication" value="{{book.Publication}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Year">Year</label>
+            <input type="number" id="Year" class="form-control" name="Year" value="{{book.Year}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Author">Author</label>
+            <input type="text" id="Author" class="form-control" name="Author" value="{{book.Author}}" required>
+        </div>
+        <div class="form-group">
+            <label for="NumberOfPages">Number Of Pages</label>
+            <input type="number" id="NumberOfPages" class="form-control" name="NumberOfPages" value="{{book.NumberOfPages}}" required>
+        </div>
+    </fieldset>
+
+    <button class="btn btn-success" type="submit">Save</button> | <a class="btn btn-danger" href="/">Cancel</a>
+
+</form>

@@ -1,0 +1,21 @@
+<form method="post">
+    <fieldset>
+        <div class="form-group">
+            <label for="Country">Country</label>
+            <input type="text" id="Country" class="form-control" name="Country" value="{{country.Country}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Population">Population</label>
+            <input type="number" id="Population" class="form-control" name="Population" value="{{country.Population}}"required >
+        </div>
+        <div class="form-group">
+            <label for="Capital">Capital</label>
+            <input type="text" id="Capital" class="form-control" name="Capital" value="{{country.Capital}}" required>
+        </div>
+        <div class="form-group">
+            <label for="area">Area</label>
+            <input type="number" id="area" class="form-control" name="area" value="{{country.area}}" required>
+        </div>
+    </fieldset>
+    <button class="btn btn-success" type="submit">Save</button> | <a class="btn btn-danger" href="/">Cancel</a>
+</form>

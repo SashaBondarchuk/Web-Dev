@@ -1,0 +1,31 @@
+<form method="post">
+    <fieldset>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" class="form-control" name="country" value="{{city.Country}}" required>
+        </div>
+         <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" class="form-control" name="city" value="{{city.City}}" required>
+        </div>
+        <div class="form-group">
+            <label for="region">City</label>
+            <input type="text" id="region" class="form-control" name="region" value="{{city.Region}}" required>
+        </div>
+        <div class="form-group">
+            <label for="population">Population</label>
+            <input type="number" id="population" class="form-control" name="population" value="{{city.Population}}" >
+        </div>
+
+        <div class="form-group">
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" class="form-control" name="latitude" value="{{city.Latitude}}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" class="form-control" name="longitude" value="{{city.Longitude}}" required>
+        </div>
+    </fieldset>
+    <button class="btn btn-success" type="submit">Save</button> | <a class="btn btn-danger" href="/">Cancel</a>
+</form>

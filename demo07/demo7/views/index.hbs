@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{title}}</h1>
+        <div><a class="btn btn-info" href="countries/create">Create a new document</a></div>
+    </div>
+
+    <div class="row">
+        {{!-- <div class="col-md-3">
+        <form method="POST">
+            <legend>Location:</legend>
+            <fieldset>
+                <div class="form-group">
+                    <label for="Country">Country:</label>
+                    <input class="form-control" type="text" id="Country" name="Country">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input class="form-control" type="text" id="city" name="city">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Population:</legend>
+                <div class="form-group">
+                    <label for="populationMin">Min:</label>
+                    <input class="form-control" type="number" id="populationMin" name="populationMin" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="populationMax">Max:</label>
+                    <input class="form-control" type="number" id="populationMax" name="populationMax" value="0">
+                </div>
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+    </div> --}}
+        <div class="col-md-12">
+            {{!-- <output> --}}
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Population</th>
+                        <th>Capital</th>
+                        <th>Area</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each myCountries }}
+                    <tr>
+                        <td>{{Country}}</span></td>
+                        <td>{{Population}}</td>
+                        <td>{{Capital}}</span></td>
+                        <td>{{area}}</td>
+                        <td>
+                            <a class="btn btn-primary" href="countries/edit/{{_id}}"><span
+                                    class="glyphicon glyphicon-pencil"></span></a>
+                            |
+                            <a class="btn btn-danger" href="countries/delete/{{_id}}"
+                                onclick="return confirm('Are you sure?');"><span
+                                    class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{!-- </output> --}}
+        </div>
+    </div>
+</div>
